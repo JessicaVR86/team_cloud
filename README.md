@@ -37,37 +37,5 @@ El objetivo principal de este proyecto es **practicar el despliegue de sitios we
 
 ---
 
-## Cómo desplegar en AWS S3
+##  AWS S3
 
-1. **Crear un bucket en S3**  
-   - Accede a tu consola de AWS S3 y crea un bucket nuevo.
-   - Elige un nombre único global.
-   - Desactiva el bloqueo de acceso público (para permitir que cualquiera pueda ver la página).
-
-2. **Subir archivos al bucket**  
-   - Sube `index.html`, `styles.css` y las imágenes del proyecto.
-   - Mantén la estructura de carpetas para que los enlaces funcionen correctamente.
-
-3. **Configurar el bucket para hosting estático**  
-   - Ve a **Properties → Static website hosting**.
-   - Marca **Enable**.
-   - Define `index.html` como documento de inicio.
-   - Copia la URL proporcionada para acceder a tu página web.
-
-4. **Hacer públicos los archivos**  
-   - Ve a **Permissions → Bucket Policy**.
-   - Aplica una política que permita acceso público de lectura a todos los archivos del bucket. Ejemplo:
-
-```json
-{
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Sid": "PublicReadGetObject",
-      "Effect": "Allow",
-      "Principal": "*",
-      "Action": "s3:GetObject",
-      "Resource": "arn:aws:s3:::NOMBRE_DE_TU_BUCKET/*"
-    }
-  ]
-}
