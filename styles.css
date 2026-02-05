@@ -43,7 +43,6 @@ main {
 }
 
 .intro {
-  margin-bottom: 4.5rem;
   padding: 5.2rem 2rem;
   background: linear-gradient(135deg, #111827 0%, #1f2937 100%);
   border-radius: 1rem;
@@ -280,8 +279,8 @@ section h1::after {
 }
 
 .services-section {
-  margin: 2.25rem auto 0;
-  padding: 1.2rem 1rem 1.6rem;
+  margin: 0 auto 0;
+  padding: 6rem 1rem 1.6rem;
   text-align: center;
 }
 
@@ -344,8 +343,7 @@ section h1::after {
 }
 
 .team {
-  margin-top: 2rem;
-  padding: 0.8rem 0 1.8rem;
+  padding: 4rem 0 1.8rem;
 }
 
 .team-grid {
