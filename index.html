@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>Equipo Cloud de Adalab</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,19 +14,73 @@
 
 <main>
 <section class="intro">
-  <h2>Tu nube, nuestra misión</h2>
-  <p>Somos cuatro especialistas en AWS que resuelven tus problemas cloud antes de que notes que existen. Sin complicaciones, sin tecnicismos… solo soluciones que funcionan.</p>
+  <h1 class="hero-title">Tu nube, sin dramas.</h1>
 
-  <div class="features">
-    <p><strong>Migraciones sin drama: </strong>  trasladamos tus sistemas a la nube de forma rápida y segura, olvidando esos servidores antiguos.</p>
-    <p><strong>Datos que hablan: </strong>  convertimos montañas de información en decisiones claras para tu negocio.</p>
-    <p><strong>Infraestructura lista para crecer: </strong>  tu startup puede escalar sin preocuparse por caídas o cuellos de botella.</p>
-    <p><strong>Optimización de costes: </strong>  pagas solo por lo que necesitas y ahorras sin esfuerzo.</p>
-    <p><strong>Soporte 24/7: </strong>  tu nube siempre está disponible, nosotros también.</p>
+  <p class="subtitle">Somos un equipo de especialistas en AWS que acompaña a startups y empresas a crecer en la nube sin complicaciones, sin tecnicismos innecesarios y sin sustos en producción.</p>
+
+  <div class="cta-group">
+    <a class="btn-primary" href="#contact">Hablemos de tu nube</a>
+    <a class="btn-secondary" href="#how-we-work">Ver cómo trabajamos</a>
   </div>
-  <p>Hablemos y despeguemos tu nube</p>
+
 </section>
-    <section class="grid">
+
+<section class="services-section">
+  <h1 class="services-section-title">
+    Servicios
+  </h1>
+  <p class="emotional">No solo construimos infraestructuras. Acompañamos a las personas que están detrás del negocio.</p>
+  <div class="services grid">
+    <article class="service-card">
+      <div class="icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.2"/><polygon points="10.5,7.5 15,12 9,15.5" fill="currentColor"/></svg>
+      </div>
+      <h4>Migraciones sin dramas</h4>
+      <p>Movemos tus sistemas a AWS de forma segura y sin interrupciones.</p>
+    </article>
+
+    <article class="service-card">
+      <div class="icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="12" width="3" height="7" fill="currentColor"/><rect x="9" y="8" width="3" height="11" fill="currentColor"/><rect x="15" y="4" width="3" height="15" fill="currentColor"/></svg>
+      </div>
+      <h4>Datos que hablan</h4>
+      <p>Transformamos datos en decisiones claras para tu negocio.</p>
+    </article>
+
+    <article class="service-card">
+      <div class="icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2c2.2 2.2 5 5 5 9s-2.8 6.8-5 9c-2.2-2.2-5-5-5-9s2.8-6.8 5-9z" stroke="currentColor" stroke-width="1.1" fill="currentColor"/><path d="M9 13l6-6" stroke="#0b1120" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <h4>Infraestructura lista para crecer</h4>
+      <p>Escala sin caídas, sin cuellos de botella y sin noches en vela.</p>
+    </article>
+
+    <article class="service-card">
+      <div class="icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="7" stroke="currentColor" stroke-width="1.2"/><path d="M10 9h4v6h-4z" fill="currentColor"/></svg>
+      </div>
+      <h4>Optimización de costes</h4>
+      <p>Pagas solo por lo que usas. Sin sorpresas en la factura.</p>
+    </article>
+
+    <article class="service-card">
+      <div class="icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l7 4v5c0 5-3.6 9.1-7 11-3.4-1.9-7-6-7-11V6l7-4z" stroke="currentColor" stroke-width="1.1" fill="currentColor"/></svg>
+      </div>
+      <h4>Soporte y seguridad 24/7</h4>
+      <p>Tu nube siempre vigilada. Nosotras también.</p>
+    </article>
+  </div>
+</section>
+
+    <section class="team" id="equipo">
+      <h1 class="team-title">Nuestro equipo</h1>
+
+      <p class="emotional">
+  Mujeres apasionadas por AWS. Cada una aporta su experiencia para que tu viaje a la nube sea fluido y sin complicaciones.
+      </p>
+
+      <div class="grid team-grid">
 
         <article class="card">
         <span class="tag">Gina González</span>
@@ -75,7 +130,8 @@
           <li>EC2 -Servidor virtual<li>ECS / EKS -Contenedores gestionados</li><li>Lambda </li><li>CloudFormation -Infraestructura automatizada </li><li>CodePipeline -Despliegue continuo </li>
         </ul>  </p>
       </article>
- </section>
+      </div>
+    </section>
   <footer>
     Adalab & AWS restart
   </footer>
